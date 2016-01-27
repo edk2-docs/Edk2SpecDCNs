@@ -18,8 +18,10 @@
 | Revision Number  | Description  | Date   |
 | :--: | :--- | ---: |
 | 1.25 | Updates:  | January 2016 |
-|   | - Specification revision to 1.26 | |
+|   | - Specification revision to 1.25 | |
+|   | - Revised WORKSPACE wording for updated build system that can handle packages located outside of the WORKSPACE directory tree (refer to the TianoCore.org/EDKII website for additional instructions on setting up a development environment). |  |
 | *1.26* | *Updates:* | *Target Date* |
+|   | *- Specification revision to 1.26* | |
 |   | *- Add doxygen tags for GUIDs, Protocols and PPIs in comment blocks* |  |
 |   | *- Allow Registry Format GUID values as well a C Format GUID values*  |   |
 |   |   |   |
