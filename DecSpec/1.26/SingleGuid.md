@@ -23,7 +23,7 @@ This section uses one of the following section definitions:
 Format for the entries in this section is two fields with an equal “```=```” character separating the fields as shown below.
 ```ini
 > #Comment Block
-~~GuidCName = {C Format Guid Value} # Comment~~
+~~GuidCName~~ ~~=~~ ~~{C~~ ~~Format~~ ~~Guid~~ ~~Value}~~ ~~#~~ ~~Comment~~
 > GuidCName = Guid Value # Comment
 ```
 
