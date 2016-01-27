@@ -24,10 +24,8 @@ Format for the entries in this section is two fields with an equal “```=```”
 ```ini
 > #Comment Block
 ~~GuidCName = {C Format Guid Value} # Comment~~
-
-> GuidCName = Guid Value # Comment```
-
-
+> GuidCName = Guid Value # Comment
+```
 
 ~~The Comment section can be used to identify the list of supported module types.~~
 
