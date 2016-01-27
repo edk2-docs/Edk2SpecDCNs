@@ -2,6 +2,7 @@
 (http://github.com/tianocore-docs/Docs)
 
 **Next Revision: 1.26**
+
 **Target Release Date: February 26, 2016**
 
 1. Add support for UDP SingleGuid, SingleProtocol and SinglePpi attributes
@@ -18,7 +19,7 @@
 | :--: | :--- | ---: |
 | 1.25 | Updates:  | January 2016 |
 |   | - Specification revision to 1.26 | |
-| *1.26* | *Updates:* | *TBD* |
+| *1.26* | *Updates:* | *Target Date* |
 |   | *- Add doxygen tags for GUIDs, Protocols and PPIs in comment blocks* |  |
-|   | *- Allow Registry Format GUID values as well a C Fromat GUID values*  |   |
+|   | *- Allow Registry Format GUID values as well a C Format GUID values*  |   |
 |   |   |   |
