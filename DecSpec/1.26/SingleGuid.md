@@ -1,53 +1,16 @@
 # Document Change Notice
 
-Change Document: Name
 
-(git location)
-
-**Example:**
-```
 Change Document: EDK II Package Declaration (DEC) File Specification
-(http://github.com/tianocore/documents/specifications/dec_spec)
-```
+(http://github.com/tianocore-docs/Docs)
 
-Current Document Revision:
+Current Document Revision: 1.25
+New Revision: 1.26
 
-** Example:**
-```
-Current Document Revsion: 1.25
-```
-
-DCN Date:
+DCN Date: 27 Jan 2016
 
 
-## Key
-
-Removed content marked by ~~this~~.
-
-New content marked like: 
-> this
-
-
-
-**Instructions to maintainer marked like this.**
-
----
-## Revision History
-
-- *Revision number must change when there is a change to the specification that includes new content.*
-- *Changes considered bug fixes to the specification may use the same revision number, with an Errata tag. Errata tags are alpha characters.*
-
-
-| Revision Number  | Description  | Date   |
-| :--: | :--- | ---: |
-| 1.25 w/Errata A | Updates:  | January 2016 |
-|   | - Clarify ```--pcd``` option flag | |
-| 1.26 | Updates: | TBD |
-|   | - Add doxygen tags for GUIDs, Protocols and PPIs in comment blocks |  |
-|   | - Allow Registry Format GUID values as well a C Fromat GUID values  |   |
-|   |   |   |
-
-# 2.6 [Guids] Usage
+## 2.6 [Guids] Usage
 This is an optional section.
 
 This section is used to define the GUID Value for Guid C Names.
@@ -60,14 +23,18 @@ This section uses one of the following section definitions:
 Format for the entries in this section is two fields with an equal “```=```” character separating the fields as shown below.
 ```ini
 > #Comment Block
-GuidCName = {C Format Guid Value} # Comment```
+~~GuidCName = {C Format Guid Value} # Comment~~
+
+> GuidCName = Guid Value # Comment```
+
+
 
 ~~The Comment section can be used to identify the list of supported module types.~~
 
 > A comment block preceding the entry must be used to provide detailed  information, including the name of the package relative header file for the GUID. An optional comment following an entry may be used to provide simple information.
 
 
-# 3.6 [Guids] Sections
+## 3.6 [Guids] Sections
 **Prototype**
 ```ini
   <Guids>        ::= "[Guids" [<com_attribs>] "]" <EOL>
@@ -108,14 +75,14 @@ GuidCName = {C Format Guid Value} # Comment```
  
  **Example**
  ```ini
-~~#######################################################################
+#######################################################################
 #
 # Global Guid Definition section - list of Global Guid C Name
 # Data Structures that are provided by
 # this package.
 #
 #######################################################################
-[Guids.common]
+~~[Guids.common]
 gPcdHobGuid = { 0x582E7CA1, 0x68CD, 0x4D44, \
 { 0xB4, 0x3B, 0xF2, 0x98, 0xED, 0x58, 0x7B, 0xA6 }}
 gEfiWinNtPassThroughGuid = { 0xCC664EB8, 0x3C24, 0x4086, \
