@@ -7,7 +7,7 @@ Change Document: Name
 **Example:**
 ```
 Change Document: EDK II Package Declaration (DEC) File Specification
-(http://github.com/tianocore/documents/specifications/dec_spec)
+(http://github.com/tianocore-docs/Docs)
 ```
 
 Current Document Revision:
