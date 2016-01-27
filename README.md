@@ -6,6 +6,8 @@
 
 Removed content marked by ~~this~~.
 
+It may appear as strikethrough text or with just the two tilde characters before and after a section.
+
 New content marked like: 
 > this
 
