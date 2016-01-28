@@ -2,6 +2,7 @@
 
 ## EDK II Package Declaration (DEC) File Specification
 
-1. [SingleGuids](SingleGuids.md)
-2. [SingleProtocols](SingleProtocols.md)
-3. [SinglePpis](SinglePpis.md)
+1. [VersionUpdate](VersionUpdate.md)
+2. [SingleGuids](SingleGuids.md)
+3. [SingleProtocols](SingleProtocols.md)
+4. [SinglePpis](SinglePpis.md)
