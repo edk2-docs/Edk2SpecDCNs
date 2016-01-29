@@ -19,8 +19,9 @@ DCN
 <Options2>  ::= [<Use>] [<FileOpts>] <MTS>
                 "{" [<EOL>]
 ~~                    {<Filename>} {<SectionData>} <TS>~~
->                   <TS> {<Filename>} {<FileList>+} {<SectionData>}
-                "}" [<EOL>]
+~~                "}" [<EOL>]~~
+>                   <TS> {<Filename>} {<FileList>+} {<SectionData> <EOL>}
+                "}" <EOL>
 >
 > <FileList> ::= [<FfsAlignment>] <NormalFile> <EOL>
 
