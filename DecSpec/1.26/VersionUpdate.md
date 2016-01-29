@@ -11,7 +11,7 @@ New Revision: 1.26
 DCN Date: 27 Jan 2016
 
 ### Summary
-Changes the DEC_SPECIFICATION value from ```0x00010019``` to ```0x0001001A``` or ```1.26```
+Changes the ```DEC_SPECIFICATION``` value from ```0x00010019``` to ```0x0001001A``` or ```1.26```
 
 ## 2.4 [Defines] Usage
 
