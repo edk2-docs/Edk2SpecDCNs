@@ -19,10 +19,11 @@
 | :--: | :--- | ---: |
 | 1.26 | Updates:  | January 2016 |
 |   | - Specification revision to 1.26 | |
-|   | - Added clarificaiton regarding use of .. and . in path names |  |
+|   | - Revised WORKSPACE wording for updated build system that can handle packages located outside of the WORKSPACE directory tree (refer to the TianoCore.org/EDKII website for additional instructions on setting up a development environment). |  |
 |   | - Add support to generate an FMP Capsule in section 3.7 and added new section for FMP Payload data.|  |
-|   | - Since the above adds a new feature, update minor revision of FDF SPECIFICATION to 0x00010019. Only FDF files that use new feature need to use 0x0010019, older FDF files that do not use the functionality do not need to modify the FDF_SPECIFICATION values | |
-| | - Added clarification on when the FDF_SPECIFICATION value must be updated to 0x00010019 |  |
+|  | - Added new system environment variables, PACKAGES_PATH and EDK_TOOLS_BIN, used by the build system. | |
+|  | - Allow INF statements in FD regions |  |
+|  | - Clarify ```[UserExtensions]``` content in chapter 2 (to match implementation) |  |
 | *1.27* | *Updates:* | *Target Date* |
 |   | *- Specification revision to 1.27* | |
 |   | *- Allow support multiple binary files in FILE RAW section* |  |
