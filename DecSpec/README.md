@@ -1,7 +1,8 @@
 # DCNs for the EDK II DEC Specification
+
 (http://github.com/tianocore-docs/Docs)
 
-**Next Revision: 1.26**
+**Target Revision: 1.26**
 
 **Target Release Date: February 26, 2016**
 
