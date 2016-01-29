@@ -1,9 +1,11 @@
 # Document Change Notice
 
 Change Document: EDK II Package Declaration (DEC) File Specification
+
 (http://github.com/tianocore-docs/Docs)
 
 Current Document Revision: 1.25
+
 New Revision: 1.26
 
 DCN Date: 27 Jan 2016
@@ -23,7 +25,7 @@ This section uses one of the following section definitions:
 
 ```[Ppis] [Ppis.IA32] [Ppis.X64] [Ppis.IPF] [Ppis.EBC] [Ppis.common] ```
 
-Format for the entries in this section is two fields with an equal “```=```” 
+Format for the entries in this section is two fields with an equal "```=```" 
 character separating the fields as shown below.
 ```ini
 > # Comment Block
@@ -34,7 +36,7 @@ character separating the fields as shown below.
 ~~The Comment section can be used to identify the list of supported module types.~~
 
 > A comment block preceding the entry must be used to provide detailed  information, including the
-> name of the package relative header file for the PPI. An optional comment following an entry
+> name of the package-relative header file for the PPI. An optional comment following an entry
 > may be used to provide simple information.
 
 ## 3.8 [Ppis] Sections
