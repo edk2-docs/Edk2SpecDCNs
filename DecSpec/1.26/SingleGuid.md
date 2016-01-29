@@ -9,6 +9,11 @@ New Revision: 1.26
 
 DCN Date: 27 Jan 2016
 
+### Summary
+
+1. Allow use of Registry Format GUID to declarations
+2. Adding new reserved comment, ```@SingleGuid <GuidType>```
+
 
 ## 2.6 [Guids] Usage
 This is an optional section.
