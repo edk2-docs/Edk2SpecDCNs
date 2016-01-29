@@ -27,7 +27,7 @@ This section uses one of the following section definitions:
 ```[Guids] [Guids.IA32] [Guids.X64] [Guids.IPF] [Guids.EBC]
 [Guids.common] [Guids.IA32, Guids.X64] [Guids.X64, Guids.IPF]```
 
-Format for the entries in this section is two fields with an equal “```=```” character separating the fields as shown below.
+Format for the entries in this section is two fields with an equal "```=```" character separating the fields as shown below.
 ```ini
 > #Comment Block
 ~~GuidCName = {C Format Guid Value} # Comment~~
