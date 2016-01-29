@@ -17,7 +17,7 @@ The four sections, Includes, Ppis, Guids and Protocols headers will be modified 
 
 ## 2.5 [Includes] Usage
 
-Also included in this section are the directories containing headers that may be required for individual EDK II module types. Refer to Appendix, �EDK II Module Types�, for a list of the valid types.
+Also included in this section are the directories containing headers that may be required for individual EDK II module types. Refer to Appendix, "*EDK II Module Types*", for a list of the valid types.
 
 The section tag modifier, Private, is used to restrict the EDK II build system by preventing references to content in these sections from being used by modules outside of the package. It is not permissible to mix section tags without the Private attribute with section tags with the Private attribute.
 
@@ -74,7 +74,9 @@ This section use ones of the following section definitions:
 > [Protocols.IA32.Private] [Protocols.X64] [Protocols.X64.Private]
 > [Protocols.IPF] [Protocols.IPF.Private] [Protocols.EBC]
 > [Protocols.EBC.Private]
+
 ```
+
 > Architectural sections may also be combined, as in:
 ```ini
 > [Protocols.IA32, Protocols.X64]
@@ -96,6 +98,7 @@ This section use ones of the following section definitions:
 > [Ppis.EBC.Private]
 
 ```
+
 > Architectural sections may also be combined, as in:
 ```ini
 > [Ppis.IA32, Ppis.X64]
