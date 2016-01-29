@@ -28,6 +28,6 @@
 |   |   |   |
 
 
-[Individual DCNs](DecSpec/SUMMARY.md)
+[Individual DCNs](SUMMARY.md)
 
 
