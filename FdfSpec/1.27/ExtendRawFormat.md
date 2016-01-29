@@ -14,7 +14,7 @@ DCN Date: 27 Jan 2016
 
 ### Summary
 
-1. Extend the FILE RAW statement format to support multiple binary files.
+1. Extend the FV and Capsule, FILE RAW statement format to support multiple binary files.
 
 
 ## 3.6 [FV] Sections
@@ -74,14 +74,14 @@ FILE RAW = 197DB236-F856-4924-90F8-CDF12FB975F3 {
 <Options2>  ::= [<Use>] [<FileOpts>] <MTS>
                 "{" [<EOL>]
 ~~                   <TS> {<Filename>} {<SectionData>} <TS>~~
->                   <TS> {<Filename>} {<FileList>} {<SectionData> <EOL>}
+>                   {<Filename>} {<FileList>+} {<SectionData> <EOL>}
                 "}" [<EOL>]
 >
-> <FileList> ::= [<FfsAlignment>] <NormalFile>
+> <FileList> ::= <TS> [<FfsAlignment>] <NormalFile> <EOL>
 
 ...
 
 ~~<Filename>   ::= {<FvImage>} {<FdImage>} {<NormalFile>}~~
-> <Filename>   ::= {<FvImage>} {<FdImage>} {<NormalFile>} <EOL>
+> <Filename>   ::= <TS> {<FvImage>} {<FdImage>} {<NormalFile>} <EOL>
 
 ```
