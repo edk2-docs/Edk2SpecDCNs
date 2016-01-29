@@ -4,5 +4,5 @@ Proposed changes to EDK II Meta-Data File Specifications
 
 [Changes Key](DCN_Keys.md)
 
-[DEC Specification](DecSpec/README.md)
+[DEC Specification Changes](DecSpec/README.md)
 
