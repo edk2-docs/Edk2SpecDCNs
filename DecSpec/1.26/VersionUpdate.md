@@ -74,20 +74,11 @@ introduced by this specification version.
 | *UiNameType* |   |
 |  | The ```PACKAGE_NAME``` value may be used for creating directories. |
 | *DecimalVersion* |    |
-|  | This is a decimal number, and if not specified is assumed to be 0. Alpha characters
-are not permitted. |
+|  | This is a decimal number, and if not specified is assumed to be 0. Alpha characters are not permitted. |
 | *SpecVer* |     |
-|  | For new DEC files, the version value must be set to 0x0001001A. Tools that process
-this version of the DEC file can successfully process earlier versions of the DEC file
-(this is a backward compatible update). There is no requirement to change the
-value in existing DEC files if no other content changes. This may also be specified
-as decimal value, 1.26. |
+|  | For new DEC files, the version value must be set to 0x0001001A. Tools that process this version of the DEC file can successfully process earlier versions of the DEC file (this is a backward compatible update). There is no requirement to change the value in existing DEC files if no other content changes. This may also be specified as decimal value, 1.26. |
 | *Filename* |    |
-|  | Filenames listed in the ```[Defines]``` section must be relative to the directory the
-DEC file is in. Use of "..", "." and "../" in the directory path is not permitted. Use of
-an absolute path is not permitted. The file name specified in the
-```PACKAGE_UNI_FILE``` entry must be a Unicode file with an extension of .uni, .UNI or
-.Uni. |
+|  | Filenames listed in the ```[Defines]``` section must be relative to the directory the DEC file is in. Use of "..", "." and "../" in the directory path is not permitted. Use of an absolute path is not permitted. The file name specified in the ```PACKAGE_UNI_FILE``` entry must be a Unicode file with an extension of .uni, .UNI or .Uni. |
 
  
 ~~**Example**~~
