@@ -24,4 +24,10 @@
 |   | *- Specification revision to 1.26* | |
 |   | *- Add doxygen tags for GUIDs, Protocols and PPIs in comment blocks* |  |
 |   | *- Allow Registry Format GUID values as well a C Format GUID values*  |   |
+|   | *- Specify Private Content only used by modules within a package* |    |
 |   |   |   |
+
+
+[Individual DCNs](DecSpec/SUMMARY.md)
+
+
