@@ -1,6 +1,6 @@
 # Summary
 
-[DEC Specification 1.26](DecSpec/1.26/SUMMARY.md)
+[DEC Specification](DecSpec/README.md)
 
 * [VersionUpdate](DecSpec/1.26/VersionUpdate.md)
 * [SingleGuid](DecSpec/1.26/SingleGuid.md)

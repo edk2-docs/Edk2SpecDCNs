@@ -1,29 +1,8 @@
-# Edk2SpecDCNs
+# EDK II Document Change Notices
 
-## Key
+Proposed changes to EDK II Meta-Data File Specifications
 
-**Instructions to maintainer marked like this.**
+![Changes Key](DCN_Keys.md)
 
-Removed content marked by ~~this~~.
+![DEC Specification](DecSpec/README.md)
 
-It may appear as strikethrough text or with just the two tilde characters before and after a section.
-
-New content marked like: 
-> this
-
-or like this:
-```ini
-> New Content
-
-```
-
-For Tables,
-
-| Header1 | Header2 | Header3 |
-| :-----: | :------ | ------: |
-| Prev    | Prev    | Prev    |
-| ~~DeleteMe~~ | ~~DeleteMe~~ | ~~DeleteMe~~ |
-| *NewCell* | *NewCell* | *NewCell* |
-|   |   |   |
-
----
