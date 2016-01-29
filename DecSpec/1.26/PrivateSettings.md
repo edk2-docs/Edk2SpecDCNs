@@ -9,7 +9,7 @@ New Revision: 1.26
 
 DCN Date: 27 Jan 2016
 
-**Summary**
+### Summary
 
 Add new syntax to the DEC file for specifying information that can only be used by modules within the package. When modules outside the packages attempt to use this content, the EDK II build system must break with an error regarding content not found.
 
@@ -17,7 +17,7 @@ The four sections, Includes, Ppis, Guids and Protocols headers will be modified 
 
 ## 2.5 [Includes] Usage
 
-Also included in this section are the directories containing headers that may be required for individual EDK II module types. Refer to Appendix, “EDK II Module Types”, for a list of the valid types.
+Also included in this section are the directories containing headers that may be required for individual EDK II module types. Refer to Appendix, ï¿½EDK II Module Typesï¿½, for a list of the valid types.
 
 The section tag modifier, Private, is used to restrict the EDK II build system by preventing references to content in these sections from being used by modules outside of the package. It is not permissible to mix section tags without the Private attribute with section tags with the Private attribute.
 
