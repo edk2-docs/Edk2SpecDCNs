@@ -7,3 +7,9 @@
 * [SingleProtocol](DecSpec/1.26/SingleProtocol.md)
 * [SinglePpi](DecSpec/1.26/SinglePpi.md)
 * [Private Settings](DecSpec/1.26/PrivateSettings.md)
+
+[FDF Specification](FdfSpec/README.md)
+
+* [Version Update](FdfSpec/1.27/VersionUpdate.md)
+* [Extend FILE RAW format](FdfSpec/1.27/ExtendRawFormat.md)
+
