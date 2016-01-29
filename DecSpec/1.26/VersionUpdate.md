@@ -5,10 +5,13 @@ Change Document: EDK II Package Declaration (DEC) File Specification
 (http://github.com/tianocore-docs/Docs)
 
 Current Document Revision: 1.25
+
 New Revision: 1.26
 
 DCN Date: 27 Jan 2016
 
+### Summary
+Changes the DEC_SPECIFICATION value from 0x00010019 to 0x0001001A or 1.26
 
 ## 2.4 [Defines] Usage
 
