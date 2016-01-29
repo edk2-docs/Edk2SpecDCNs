@@ -34,12 +34,12 @@ DCN Date: 27 Jan 2016
 >                   <TS> {<Filename>} {<FileList>+} {<SectionData> <EOL>}
                 "}" <EOL>
 >
-> <FileList> ::= [<FfsAlignment>] <NormalFile> <EOL>
+> <FileList> ::= <TS> [<FfsAlignment>] <NormalFile> <EOL>
 
 ...
 
 ~~<Filename> ::= {<FvImage>} {<FdImage>} {<NormalFile>}~~
-> <Filename> ::= {<FvImage>} {<FdImage>} {<NormalFile>} <EOL>
+> <Filename> ::= <TS> {<FvImage>} {<FdImage>} {<NormalFile>} <EOL>
 
 ```
 
