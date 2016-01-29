@@ -48,3 +48,13 @@ Conditional statements may be used anywhere within this section.
 | *FDF_SPECIFICATION* | |
 | | ~~For this specification, the version value is 0x0001001A. Tools that process this version of the FDF file can successfully process earlier versions of the FDF files (this is a backward compatible update). If an FDF file with an earlier version of the ```FDF_SPECIFICATION``` is modified to use the FMP Payload section and FMP Capsule definitions, the version value should be updated to 0x0001001A. There is no requirement to change existing entries if no other content changes. This value may also be specified as decimal value, such as 1.26.~~ |
 | | For this specification, the version value is ```0x0001001B```. Tools that process this version of the FDF file can successfully process earlier versions of the FDF files (this is a backward compatible update). If an FDF file with an earlier version of the ```FDF_SPECIFICATION``` is modified to use new features, the version value should be updated to ```0x0001001B```. There is no requirement to change existing entries if no other content changes. This value may also be specified as decimal value, such as 1.27. |
+
+
+**Example**
+```ini
+[Defines]
+~~FDF_SPECIFICATION = 0x0001001A~~
+>  FDF_SPECIFICATION = 1.27
+  DEFINE BIG_STUFF = False
+  SET gEfiMyPlatformTokenSpaceGuid.MyUsbFlag = True
+```
