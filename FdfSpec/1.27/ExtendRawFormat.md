@@ -25,6 +25,11 @@ DCN
 >
 > <FileList> ::= [<FfsAlignment>] <NormalFile> <EOL>
 
+...
+
+~~<Filename> ::= {<FvImage>} {<FdImage>} {<NormalFile>}~~
+> <Filename> ::= {<FvImage>} {<FdImage>} {<NormalFile>} <EOL>
+
 ```
 
 
@@ -58,12 +63,14 @@ FILE RAW = 197DB236-F856-4924-90F8-CDF12FB975F3 {
 <Options2>  ::= [<Use>] [<FileOpts>] <MTS>
                 "{" [<EOL>]
 ~~                   <TS> {<Filename>} {<SectionData>} <TS>~~
->                   <TS> {<Filename>} {<FileList>} {<SectionData>} <TS>
+>                   <TS> {<Filename>} {<FileList>} {<SectionData> <EOL>}
                 "}" [<EOL>]
 >
 > <FileList> ::= [<FfsAlignment>] <NormalFile>
 
 ...
 
-<Filename>   ::= {<FvImage>} {<FdImage>} {<NormalFile>} <EOL>
+~~<Filename>   ::= {<FvImage>} {<FdImage>} {<NormalFile>}~~
+> <Filename>   ::= {<FvImage>} {<FdImage>} {<NormalFile>} <EOL>
+
 ```
