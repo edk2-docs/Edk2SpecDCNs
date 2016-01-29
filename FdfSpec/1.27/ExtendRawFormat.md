@@ -14,7 +14,7 @@ DCN Date: 27 Jan 2016
 
 ### Summary
 
-1. Extend the RAW format to support multiple binary files.
+1. Extend the FILE RAW statement format to support multiple binary files.
 
 
 ## 3.6 [FV] Sections
