@@ -43,7 +43,6 @@ DCN Date: 27 Jan 2016
 
 ```
 
-
 **Examples**
 
 **Append the following at the end of the Example in 3.6***
@@ -60,6 +59,7 @@ FILE RAW = 197DB236-F856-4924-90F8-CDF12FB975F3 {
   Align=16 $(PLATFORM_PACKAGE)/Binaries/File1.pdb
 }
 ```
+
 
 ## 3.7 [Capsule] Sections
 
