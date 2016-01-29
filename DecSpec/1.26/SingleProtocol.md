@@ -1,9 +1,11 @@
 # Document Change Notice
 
 Change Document: EDK II Package Declaration (DEC) File Specification
+
 (http://github.com/tianocore-docs/Docs)
 
 Current Document Revision: 1.25
+
 New Revision: 1.26
 
 DCN Date: 27 Jan 2016
@@ -23,7 +25,7 @@ This section uses one of the following section definitions:
 ```[Protocols] [Protocols.IA32] [Protocols.X64] [Protocols.IPF] [Protocols.EBC]
 [Protocols.common] ```
 
-Format for the entries in this section is two fields with an equal “```=```” character separating the fields as shown below.
+Format for the entries in this section is two fields with an equal ï¿½```=```ï¿½ character separating the fields as shown below.
 ```ini
 > 
 > \# Comment Block
