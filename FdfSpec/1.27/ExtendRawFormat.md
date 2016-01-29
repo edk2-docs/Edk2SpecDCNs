@@ -6,6 +6,25 @@ DCN
 1. Extend the RAW format to support multiple binary files.
 
 
+## 3.6 [FV] Sections
+
+**Prototype**
+
+```ini
+<type3>     ::= <TS> "FILE" <MTS> "RAW" <Eq> <NamedGuidOrPcd>
+                <Options2>
+
+...
+
+<Options2>  ::= [<Use>] [<FileOpts>] <MTS>
+                "{" [<EOL>]
+~~                    {<Filename>} {<SectionData>} <TS>~~
+>                   {<Filename>} {<FileList>} {<SectionData>} <TS>
+                "}" [<EOL>]
+>
+> <FileList> ::= [<FfsAlignment>] <NormalFile>
+```
+
 
 **Examples**
 
