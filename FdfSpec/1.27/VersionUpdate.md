@@ -1,6 +1,5 @@
 # Document Change Notice
 
-
 Change Document: EDK II Flash Definition (FDF) File Specification
 
 (http://github.com/tianocore-docs/Docs)
