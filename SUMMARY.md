@@ -19,3 +19,4 @@
 * [Version Update](DscSpec/1.27/VersionUpdate.md)
 * [Registry Format GUIDs](DscSpec/1.27/RegFormatGuids.md)
 
+[Build Specification](BuildSpec/README.md)
