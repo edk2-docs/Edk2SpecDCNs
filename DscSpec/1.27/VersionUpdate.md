@@ -21,6 +21,13 @@ Changes the ```DSC_SPECIFICATION``` value from ```0x0001001A``` to ```0x0001001B
 > DSC files that use any new features must use the new DSC_SPECIFICATION = 0x0001001B in the [Defines] section. Older DSC files that do not use any of these features do not need to update the DSC_SPECIFICATION value.
 
 ## 2.3 [Defines] Section
+**Table 6. EDK II [Defines] Section Elements**
+
+| **Typical Tag Names**  | **Required/Optional** | **Value**  | **Notes** |
+| :---- | :---: | :---- | :---- |
+| ~~```DSC_SPECIFICATION```~~ | ~~Required~~ | ~~0x0001001A or 1.26~~ | ~~This entry is required for all EDK II DSC files. The value, 0x0001001A matches the 1.26 version of this specification. Build tools must continue to support DSC files that correspond to earlier versions of the document until such time as earlier versions are no longer in use. In order to maintain backward compatibility, this value must only be updated in existing DSC files if other content in the file is updated. This value may also be specified as decimal value, i.e., 1.26.~~ |
+| > ```DSC_SPECIFICATION``` | > Required | > 0x0001001B or 1.27 | > This entry is required for all EDK II DSC files. The value, 0x0001001B matches the 1.27 version of this specification. Build tools must continue to support DSC files that correspond to earlier versions of the document until such time as earlier versions are no longer in use. In order to maintain backward compatibility, this value must only be updated in existing DSC files if other content in the file is updated. This value may also be specified as decimal value, i.e., 1.27. |
+| &#32; | &#32; | &#32; | &#32; |
 
 
 ## 3.4 [Defines] Section
