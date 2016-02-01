@@ -13,3 +13,9 @@
 * [Version Update](FdfSpec/1.27/VersionUpdate.md)
 * [Extend FILE RAW format](FdfSpec/1.27/ExtendRawFormat.md)
 
+
+[DSC Specification](DscSpec/README.md)
+
+* [Version Update](DscSpec/1.27/VersionUpdate.md)
+* [Registry Format GUIDs](DscSpec/1.27/RegFormatGuids.md)
+
