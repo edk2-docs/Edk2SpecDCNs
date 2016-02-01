@@ -8,15 +8,19 @@ Current Document Revision: 1.26
 
 Target Revision: 1.27
 
-DCN Date: 29 Jan 2016
+DCN Date: 01 Feb 2016
 
 ### Summary
 Changes the ```DSC_SPECIFICATION``` value from ```0x0001001A``` to ```0x0001001B``` or ```1.27```
 
-# 2 DSC Design Discussion
+# 2 DSC Overview
 
-~~This revision of the specification adds support for multiple EDK II Packages directories outside of the WORKSPACE. FDF files that use this feature must use the new ```DSC_SPECIFICATION = 0x0001001A``` in the ```[Defines]``` section. Older FDF files do not need to update the DSC_SPECIFICATION value.
+~~DSC files that use any new features must use the new DSC_SPECIFICATION = 0x0001001A in the [Defines] section. Older DSC files that do not use any of these features do not need to update the DSC_SPECIFICATION value.
 ~~
+
+> DSC files that use any new features must use the new DSC_SPECIFICATION = 0x0001001B in the [Defines] section. Older DSC files that do not use any of these features do not need to update the DSC_SPECIFICATION value.
+
+## 2.3 [Defines] Section
 
 
 ## 3.4 [Defines] Section
