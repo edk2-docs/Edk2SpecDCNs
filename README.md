@@ -10,3 +10,6 @@ Proposed changes to EDK II Meta-Data File Specifications
 
 * [FDF Specification Changes](FdfSpec/README.md)
 
+* [Build Specification Changes](BuildSPec/README.md)
+
+
