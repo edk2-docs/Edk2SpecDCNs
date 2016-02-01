@@ -30,7 +30,7 @@ Changes the ```DSC_SPECIFICATION``` value from ```0x0001001A``` to ```0x0001001B
 | &#32; | &#32; | &#32; | &#32; |
 
 
-## 3.4 [Defines] Section
+## 3.5 [Defines] Section
 
 **Summary**
 
@@ -41,7 +41,7 @@ This section describes the defines section content in the DSC files. This file c
 ~~This revision of specification does not add new features. New EDK II DSC files must include the statement: DSC_SPECIFICATION = 0x0001001A in this section. Existing DSC files do not need to update the value.~~
 
 > This revision of the specification adds support for specifying a GUID value as a Registry 
-Format GUID. Any DSC file that uses this feature must use the 0x0001001B DSC_SPECIFICATION value. Older DSC files that do not use this feature do not need to update the value.
+Format GUID in addition to a C Format GUID. Any DSC file that uses this feature must use the 0x0001001B DSC_SPECIFICATION value. Older DSC files that do not use this feature do not need to update the value.
 
 Individual items must appear on a single line, they may not span multiple lines.
 
