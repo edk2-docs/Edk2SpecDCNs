@@ -24,9 +24,9 @@
 |  | - Added new system environment variables, PACKAGES_PATH and EDK_TOOLS_BIN, used by the build system. | |
 |  | - Allow INF statements in FD regions |  |
 |  | - Clarify ```[UserExtensions]``` content in chapter 2 (to match implementation) |  |
-| *1.27* | *Updates:* | *Target Date* |
-|   | *- Specification revision to 1.27* | |
-|   | *- Allow support multiple binary files in FILE RAW section* |  |
+| > *1.27* | > *Updates:* | > *Target Date* |
+|   |> *- Specification revision to 1.27* | |
+|   |> *- Allow support multiple binary files in FILE RAW section* |  |
 |   |   |   |
 
 
