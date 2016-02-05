@@ -53,6 +53,30 @@ On the command line, append the following arguments:
 
 >The default set of flags (if **-Y** is not specified) is: ```PCD, LIBRARY, FLASH, DEPEX, HASH, BUILD_FLAGS ```and ```FIXED_ADDRESS```.
 
+### 13.3.1 Layout
+The layout of the text report file:
+```ini
+|---- Platform summary
+```
+>```ini
+    |----- Conditional directives section
+```
+
+```ini
+    |----- Global PCD section
+    |----- FD section*
+        |---- FD Region sub-section*
+        |---- VPD PCD Data sub-section*
+    |---- Module section*
+        |---- Basic Information summary
+        |---- PCD sub-section
+        |---- Library sub-section
+        |---- DEPEX sub-section
+        |---- Build_flags sub-section
+        |---- Notification sub-section
+```
+
+
 ### 13.3.2 Section and Sub-section Format
 
 **Example**
@@ -93,6 +117,82 @@ Offset Module
 >--------------------------------------------------------------------------<
 ..(List of other FD region sub-section)
 >==========================================================================<
+```
+
+## 13.4 Platform Summary
+
+Platform summary displays at the beginning of the output report, including the
+following items:
+
+* Platform Name : %Platform UI name: 'PLATFORM_NAME' in DSC [Defines] section%
+* Platform DSC Path: %Path of platform DSC file%
+* Architectures : %List string of all architectures used in build%
+* Tool Chain : %Tool chain string%
+* Target : %Target String"
+* Output Path : %Path to platform build directory%
+* Build Environment : %Environment string reported by Python%
+* Build Duration : %Build duration time string%
+* Report Content : %List of flags the control the report content%
+
+>If the DSC or FDF file contained conditional directive statements (```!if, !elseif, !ifdef``` or ```!ifndef```), the following two sub-sections may appear. If a PCD is used in a conditional directive statement, the PCD section will be displayed. If a MACRO is used in a conditional directive statement, the MACRO section will be displayed.
+
+>The sub-section title will start with the following:
+> ```ini
+>==========================================================================<
+Conditional Directives used by the build system
+============================================================================
+```
+
+> ### 13.4.1 PCDs
+
+> The first line is required:
+
+>```[*P|*F|*B] <PcdCName>: <PcdType> (<DatumType>) = <PcdValue>```
+>   * ```*P``` means the Pcd's value was obtained from the DSC file
+>   * ```*F``` means the PCD's value was obtained from the FDF file.
+>   * ```*B``` means the PCD's value set by a command-line option.
+
+> **Example**
+> ```ini
+>==========================================================================<
+Conditional Directives used by the build system
+============================================================================
+PCD statements
+>--------------------------------------------------------------------------<
+*P gTokenSpaceGuid.SmmEnable   : FEATURE (BOOLEAN) = 0x0
+                                         DEC DEFAULT = 0x1
+*B gTokenSpaceGuid.LogEnable   : FIXED   (UNIT32) = 0x1
+                                         DEC DEFAULT = 0x0
+                                         COMMAND LINE = TRUE
+<-------------------------------------------------------------------------->
+>==========================================================================<
+```
+
+
+> ### 13.4.2 MACROs
+> Format
+
+> **Example**
+> ```ini
+>==========================================================================<
+Conditional Directives used by the build system
+============================================================================
+Macros used in !if and/or !elseif statements
+>--------------------------------------------------------------------------<
+*P X64_CONFIG                  : FALSE
+                                 COMMAND LINE = /D X64_CONFIG=FALSE
+*P ACPI50_ENABLE               : TRUE
+*P PERFORMANCE_ENABLE          : TRUE
+                                 COMMAND LINE = /D PERFORMANCE_ENABLE=TRUE
+*P LFMA_ENABLE                 : FALSE
+*B MINNOW2_FSP_BUILD           : TRUE
+<-------------------------------------------------------------------------->
+Macros used in !ifdef and/or !ifndef statements
+>--------------------------------------------------------------------------<
+*P ENABLE_USB                  : UNDEFINED
+*P ENABLE_SEC                  : DEFINED
+                                 COMMAND LINE /D ENABLE_SEC
+<-------------------------------------------------------------------------->
 ```
 
 ## 13.5 Global PCD Section
