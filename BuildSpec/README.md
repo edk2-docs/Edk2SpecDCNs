@@ -27,7 +27,7 @@
 |   | - Add support for INF statement in an FD region. |   |
 | *1.27* | *Updates:* | *Target Date* |
 |   | *- Specification revision to 1.27* |  |
-|   | *- Allow Registry Format GUID values as well a C Format GUID values*  |   |
+|   | *- Allow Registry Format GUID values as well a C Format GUID values* |   |
 |   | *- Specify how to process Private content specified in DEC files to only be used by modules within a package* |   |
 |   | *- Add new sub-section to the Build Report to show PCDs that are used in conditional directive statements in the DSC and FDF files that are not used in code by modules.* |  | 
 |   | *- Add new sub-section to the Build Report to show MACROS that are used in conditional directive statemens in the DSC and FDF files.* |   |
