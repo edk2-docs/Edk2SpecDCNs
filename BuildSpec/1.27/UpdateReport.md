@@ -20,6 +20,12 @@ Update the Report to include:
 * Display a SHA1 HASH of the .efi file in the Module's Summary Section if the ```-Y HASH``` option is present
 
 
+
+---
+
+
+
+
 ## 13.1 Build Report Generation
 
 ***Add new item at the end of the defintions, before the Note ***
@@ -109,9 +115,9 @@ The first line is required:
 *P PcdWinNtFirmwareVolume               : FIXED (VOID*) = L"..\\Fv\\Nt32.fd"
 *F PcdWinNtFlashNvStorageFtwWorkingBase : FIXED (UINT32) = 0x0028E000
                                                 DEC DEFAULT = 0x0
-*B gTokenSpaceGuid.LogEnable            : FIXED (UNIT32) = 0x1
-                                                DEC DEFAULT = 0x0
-                                                COMMAND LINE = TRUE
+> *B gTokenSpaceGuid.LogEnable            : FIXED (UNIT32) = 0x1
+>                                                 DEC DEFAULT = 0x0
+>                                                 COMMAND LINE = TRUE
 
 ```
 
