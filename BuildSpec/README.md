@@ -31,6 +31,7 @@
 |   | *- Specify Private Content only used by modules within a package*     |   |
 |   | *- Add new sub-section to the Build Report to show PCDs that are used in conditional directive statements in the DSC and FDF files that are not used in code by modules.* |  | 
 |   | *- Add new sub-section to the Build Report to show MACROS that are used in conditional directive statemens in the DSC and FDF files.* |   |
+|   | *- Add an SHA1 HASH of a module's .efi file if the -Y HASH flag is present on the command-line.* |   |
 |   |   |   |
 
 
