@@ -17,3 +17,5 @@ Update the Report to include a listing of PCDs that are used in conditional dire
 
 Update the Report to include a listing of MACROs that are used in conditional directives in the DSC and FDF files.
 
+Update the Report to include a SHA1 HASH of the .efi file in the Module's Summary Section if the ```-Y HASH``` option is present
+
