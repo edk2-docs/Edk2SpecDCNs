@@ -13,4 +13,6 @@ DCN Date: 27 Feb 2016
 
 ### Summary
 
-Update the Report to include a list of PCDs and MACROS that are used in conditional directives in the FDF and DSC files that are not used in module code.
+Update the Report to include a listing of PCDs that are used in conditional directives in the DSC and FDF files that are not used in module code.
+
+Update the Report to include a listing of MACROs that are used in conditional directives in the DSC and FDF files.
