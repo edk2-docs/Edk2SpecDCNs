@@ -13,14 +13,12 @@ DCN Date: 27 Feb 2016
 
 ### Summary
 
-Update the Report to include a listing of PCDs that are used in conditional directives in the DSC and FDF files that are not used in module code.
+Update the Report to include:
+* Listing of PCDs that are used in conditional directives in the DSC and FDF files that are not used in module code.
+* Listing of MACROs that are used in conditional directives in the DSC and FDF files.
+* Update PCD keys to show command-line option override of values
+* Display a SHA1 HASH of the .efi file in the Module's Summary Section if the ```-Y HASH``` option is present
 
-Update the Report to include a listing of MACROs that are used in conditional directives in the DSC and FDF files.
-
-Update the Report to include a SHA1 HASH of the .efi file in the Module's Summary Section if the ```-Y HASH``` option is present
-
-
-# HASH
 
 ## 13.1 Build Report Generation
 
@@ -90,6 +88,31 @@ Offset Module
 >--------------------------------------------------------------------------<
 ..(List of other FD region sub-section)
 >==========================================================================<
+```
+
+## 13.5 Global PCD Section
+
+### 13.5.1 Required line
+The first line is required:
+
+~~```[*P|*F| ] <PcdCName>: <PcdType> (<DatumType>) = <PcdValue>```~~
+>```[*P|*F|*B] <PcdCName>: <PcdType> (<DatumType>) = <PcdValue>```
+
+* ```*P``` means the Pcd's value was obtained from the DSC file
+* ```*F``` means the PCD's value was obtained from the FDF file.
+* ```*B``` means the PCD's value was overridden by a command-line option.
+* ~~If no ```*P``` or ```*F``` is given, the PCD's value comes from DEC file. If the value obtained from either the DSC or FDF is the same as the value in the DEC, then neither ```*P``` nor ```*F``` will be shown in the report.~~
+* >If no ```*P```, ```*F``` or ```*B``` is shown, the PCD's value comes from DEC file. If the value obtained from either the DSC or FDF is the same as the value in the DEC, then neither ```*P``` nor ```*F``` will be shown in the report.
+
+**Examples:**
+```ini
+*P PcdWinNtFirmwareVolume               : FIXED (VOID*) = L"..\\Fv\\Nt32.fd"
+*F PcdWinNtFlashNvStorageFtwWorkingBase : FIXED (UINT32) = 0x0028E000
+                                                DEC DEFAULT = 0x0
+*B gTokenSpaceGuid.LogEnable            : FIXED (UNIT32) = 0x1
+                                                DEC DEFAULT = 0x0
+                                                COMMAND LINE = TRUE
+
 ```
 
 ### 13.7.1 Module Section Summary
