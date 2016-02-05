@@ -26,9 +26,9 @@
 |   | - Clarify BUILDRULEORDER |   |
 |   | - Add support for INF statement in an FD region. |   |
 | *1.27* | *Updates:* | *Target Date* |
-|   | *- Specification revision to 1.27* | |
+|   | *- Specification revision to 1.27* |  |
 |   | *- Allow Registry Format GUID values as well a C Format GUID values*  |   |
-|   | *- Specify Private Content only used by modules within a package* |    |
+|   | *- Specify Private Content only used by modules within a package*     |   |
 |   |   |   |
 
 
