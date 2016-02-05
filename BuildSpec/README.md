@@ -33,6 +33,7 @@
 |   | *- Add new sub-section to the Build Report to show MACROS that are used in conditional directive statemens in the DSC and FDF files.* |   |
 |   | *- Add an SHA1 HASH of a module's .efi file if the -Y HASH flag is present on the command-line.* |   |
 |   | *- Add support for calling pre-build and post-build tools if the DSC file contains ```PREBUILD``` or ```POSTBUILD``` entries in the ```[Defines]``` section.* |   |
+|   | *- Allow PCD values to be overridden by a command-line option: ```--pcd TokenSpaceGuidCName.PcdCname=Value```. String values must be encapsulated by double quote marks.* |   |
 |   |   |   |
 
 
