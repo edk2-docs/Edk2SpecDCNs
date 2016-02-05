@@ -8,3 +8,4 @@ Target Revision: 1.27
 2. [Build Report](1.27/UpdateReport.md)
 3. [Pcd Command-line Override](1.27/PcdOverride.md)
 4. [Pre- and Post- Build processing](1.27/PrePostBuild.md)
+5. [FDF's ```FILE RAW```](1.27/FdfRawFormat.md)
