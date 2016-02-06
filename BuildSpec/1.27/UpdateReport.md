@@ -133,6 +133,7 @@ following items:
 * Report Content : %List of flags the control the report content%
 
 >If the DSC or FDF file contains conditional directive statements (```!if, !elseif, !ifdef``` or ```!ifndef```), the following sub-section may appear. If a PCD is used in a conditional directive statement, the PCD section will be displayed.
+
 ## 13.5 Global PCD Section
 
 ### 13.5.1 Required line
