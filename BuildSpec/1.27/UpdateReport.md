@@ -132,76 +132,7 @@ following items:
 * Build Duration : %Build duration time string%
 * Report Content : %List of flags the control the report content%
 
->If the DSC or FDF file contained conditional directive statements (```!if, !elseif, !ifdef``` or ```!ifndef```), the following two sub-sections may appear. If a PCD is used in a conditional directive statement, the PCD section will be displayed. If a MACRO is used in a conditional directive statement, the MACRO section will be displayed.
-
->The sub-section title will start with the following:
-> ```ini
->==========================================================================<
-Conditional Directives used by the build system
-============================================================================
-```
-
-> ### 13.4.1 PCDs
-
-> The first line is required:
-
->```[*P|*F|*B] <PcdCName>: <PcdType> (<DatumType>) = <PcdValue>```
->   * ```*P``` means the Pcd's value was obtained from the DSC file
->   * ```*F``` means the PCD's value was obtained from the FDF file.
->   * ```*B``` means the PCD's value set by a command-line option.
-
-> Additional lines may be displayed showing default values when the value is not a default value.
-
-> **Example**
-> ```ini
->==========================================================================<
-Conditional Directives used by the build system
-============================================================================
-PCD statements
->--------------------------------------------------------------------------<
-*P gTokenSpaceGuid.SmmEnable   : FEATURE (BOOLEAN) = 0x0
-                                         DEC DEFAULT = 0x1
-*B gTokenSpaceGuid.LogEnable   : FIXED   (UNIT32) = 0x1
-                                         DEC DEFAULT = 0x0
-                                         COMMAND LINE = TRUE
-<-------------------------------------------------------------------------->
->==========================================================================<
-```
-
-
-> ### 13.4.2 MACROs
-> The first line is required:
-
->```[*P|*F|*B] <MACRONAME>    : <Value> (line_no [: filename])```
->   * ```*P``` means the MACRO value was obtained from the DSC file
->   * ```*F``` means the MACRO value was obtained from the FDF file.
->   * ```*B``` means the MACRO was defined, or the value set yy a command-line option.
-
-> The line number is the number where the Macro was set in the DSC (```*P```) or FDF (```*P```) file. If the value was set in a file that was include (!include Filename) in the DSC or FDF, then the filename will be added after a colon character separator.
-
-> **Example**
-> ```ini
->==========================================================================<
-Conditional Directives used by the build system
-============================================================================
-Macros used in !if and/or !elseif statements
->--------------------------------------------------------------------------<
-*P X64_CONFIG                  : FALSE
-                                 COMMAND LINE = /D X64_CONFIG=FALSE
-*P ACPI50_ENABLE               : TRUE (50)
-*P PERFORMANCE_ENABLE          : TRUE (54 : PlatformPkgConfig.dsc)
-                                 COMMAND LINE = /D PERFORMANCE_ENABLE=TRUE
-*P LFMA_ENABLE                 : FALSE (57 : PlatformPkgConfig.dsc)
-*B MINNOW2_FSP_BUILD           : TRUE (24)
-<-------------------------------------------------------------------------->
-Macros used in !ifdef and/or !ifndef statements
->--------------------------------------------------------------------------<
-*P ENABLE_USB                  : UNDEFINED
-*P ENABLE_SEC                  : DEFINED
-                                 COMMAND LINE /D ENABLE_SEC
-<-------------------------------------------------------------------------->
-```
-
+>If the DSC or FDF file contains conditional directive statements (```!if, !elseif, !ifdef``` or ```!ifndef```), the following sub-section may appear. If a PCD is used in a conditional directive statement, the PCD section will be displayed.
 ## 13.5 Global PCD Section
 
 ### 13.5.1 Required line
