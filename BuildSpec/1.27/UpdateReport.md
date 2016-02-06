@@ -1,6 +1,5 @@
 # Document Change Notice
 
-
 Change Document: EDK II Platform Description (DSC) File Specification
 
 (http://github.com/tianocore-docs/Docs)
