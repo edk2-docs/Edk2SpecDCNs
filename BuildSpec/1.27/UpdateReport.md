@@ -132,7 +132,44 @@ following items:
 * Build Duration : %Build duration time string%
 * Report Content : %List of flags the control the report content%
 
->If the DSC or FDF file contains conditional directive statements (```!if, !elseif, !ifdef``` or ```!ifndef```), the following sub-section may appear. If a PCD is used in a conditional directive statement, the PCD section will be displayed.
+>If the DSC or FDF file contains conditional directive statements (```!if, !elseif, !ifdef``` or ```!ifndef```), the following sub-section may appear.
+
+>The sub-section title will start with the following:
+> ```ini
+>==========================================================================<
+Conditional Directives used by the build system
+============================================================================
+```
+
+> ### 13.4.1 PCDs
+
+> If a PCD is used in a conditional directive statement, the PCD section will be displayed.
+
+> The first line is required:
+
+>```[*P|*F|*B] <PcdCName>: <PcdType> (<DatumType>) = <PcdValue>```
+>   * ```*P``` means the Pcd's value was obtained from the DSC file
+>   * ```*F``` means the PCD's value was obtained from the FDF file.
+>   * ```*B``` means the PCD's value set by a command-line option.
+
+> Additional lines may be displayed showing default values when the value is not a default value.
+
+> **Example**
+> ```ini
+>==========================================================================<
+Conditional Directives used by the build system
+============================================================================
+PCD statements
+>--------------------------------------------------------------------------<
+*P gTokenSpaceGuid.SmmEnable   : FEATURE (BOOLEAN) = 0x0
+                                         DEC DEFAULT = 0x1
+*B gTokenSpaceGuid.LogEnable   : FIXED   (UNIT32) = 0x1
+                                         DEC DEFAULT = 0x0
+                                         COMMAND LINE = TRUE
+<-------------------------------------------------------------------------->
+>==========================================================================<
+```
+
 
 ## 13.5 Global PCD Section
 
