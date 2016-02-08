@@ -10,4 +10,6 @@
 * [Extend FILE RAW format](FdfSpec/1.27/ExtendRawFormat.md)
 * [DSC Version Update](DscSpec/1.27/DscVersionUpdate.md)
 * [Registry Format GUIDs](DscSpec/1.27/RegFormatGuids.md)
+* [INF Version Update](InfSpec/1.26/InfVersionUpdate.md)
+* [Registry Format GUIDs](InfSpec/1.26/RegFormatGuids.md)
 
