@@ -22,7 +22,7 @@
   - [FDF Version Update](FdfSpec/1.27/FdfVersionUpdate.md)
   - [Extend FILE RAW format](FdfSpec/1.27/ExtendRawFormat.md)
 
-* [Build Specification](BuildSPec/README.md)
+* [Build Specification](BuildSpec/README.md)
   - [Extend FILE RAW Format](BuildSpec/1.27/FdfRawFormat.md)
   - [Commmand-line --pcd option](BuildSpec/1.27/PcdOverride.md)
   - [Pre- and Post- Build command entries](BuildSpec/1.27/PrePostBuild.md)
