@@ -8,7 +8,12 @@ This section documents how changes appear in Document Change Notices.
 
 **Instructions to maintainer marked like this.**
 
-Removed content marked by ~~this~~.
+Removed content marked by ~~this~~
+
+or like this:
+```ini
+~~ Delete content~~
+```
 
 It may appear as strikethrough text or with just the two tilde characters before and after a section.
 
@@ -27,7 +32,7 @@ For Tables,
 | :-----: | :------ | ------: |
 | Prev    | Prev    | Prev    |
 | ~~DeleteMe~~ | ~~DeleteMe~~ | ~~DeleteMe~~ |
-| *NewCell* | *NewCell* | *NewCell* |
+|> *NewCell* |> *NewCell* |> *NewCell* |
 |   |   |   |
 
 ---

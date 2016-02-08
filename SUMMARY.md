@@ -30,3 +30,5 @@
   - [Registry GUID support](BuildSpec/1.27/RegFormatGUID.md)
   - [Report Update](BuildSpec/1.27/UpdateReport.md)
 
+* [Change Format Key](DCN_Keys.md)
+  - [DCN Template](DcnTemplate.md)
