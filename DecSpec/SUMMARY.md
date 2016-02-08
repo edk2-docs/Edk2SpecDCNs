@@ -2,7 +2,7 @@
 
 ## EDK II Package Declaration (DEC) File Specification
 
-Target Revision: 1.26
+### Target Revision: 1.26
 
 1. [Version Update](1.26/DecVersionUpdate.md)
 2. [SingleGuids](1.26/SingleGuid.md)

@@ -9,7 +9,6 @@
 1. Add support for UDP SingleGuid, SingleProtocol and SinglePpi attributes
 2. Allow GUID, Protocol and PPI declarations to use either Registry or C Format GUID values
 
-
 ## Revision History
 
 > 1. Revision number must change when there is a change to the specification that includes new content.
