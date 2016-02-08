@@ -15,7 +15,7 @@
 > - *Changes considered bug fixes to the specification may use the same revision number, with an Errata tag. Errata tags are alpha characters.*
 
 
-| Revision Number  | Description  | Date   |
+| **Revision Number**  | **Description**  | **Date**  |
 | :--: | :--- | ---: |
 | 1.26 | Updates:  | January 2016 |
 |   | - Specification revision to 1.26 | |

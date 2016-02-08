@@ -7,7 +7,6 @@
 **Target Release Date: February 26, 2016**
 
   1. Add support for UDP SingleGuid, SingleProtocol and SinglePpi attributes
-
   2. Allow GUID, Protocol and PPI declarations to use either Registry or C Format GUID values
 
 ## Revision History
@@ -23,12 +22,10 @@
 |  | - Update the DSC_SPECIFICATION version to 0x0001001A |  |
 |  | - Revised WORKSPACE wording for updated build system that can handle packages located outside of the WORKSPACE directory tree (refer to the TianoCore.org/EDKII website for additional instructions on setting up a development environment). |  |
 |  | - Added new system environment variables used by the build system. |  |
-| *1.27* | *Updates:* | *Target Date* |
-|  | *- Specification revision to 1.26* |  |
-|  | *- Allow Registry Format GUID values as well a C Format GUID values* |  |
-|  | *- Specify Private Content only used by modules within a package* |  |
+|> *1.27* |> *Updates:* |> *Target Date* |
+|  |> *- Specification revision to 1.26* |  |
+|  |> *- Allow Registry Format GUID values as well a C Format GUID values* |  |
+|  |> *- Specify Private Content only used by modules within a package* |  |
 
 
 [Individual DCNs](SUMMARY.md)
-
-

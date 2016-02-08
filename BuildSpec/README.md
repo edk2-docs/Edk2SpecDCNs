@@ -6,13 +6,17 @@
 
 **Target Release Date: February 26, 2016**
 
+**Target Revision: 1.28**
+
+**Target Release Date 2: June 30, 2016**
+
 ## Revision History
 
-- *Revision number must change when there is a change to the specification that includes new content.*
-- *Changes considered bug fixes to the specification may use the same revision number, with an Errata tag. Errata tags are alpha characters.*
+1. Revision number must change when there is a change to the specification that includes new content.*
+2. Changes considered bug fixes to the specification may use the same revision number, with an Errata tag. Errata tags are alpha characters.*
 
 
-| Revision Number  | Description  | Date   |
+| **Revision Number**  | **Description**  | **Date**   |
 | :--: | :--- | ---: |
 | 1.26 | Updates:  | January 2016 |
 |   | - Specification revision to 1.26 | |
@@ -25,17 +29,20 @@
 |   | - Remove Unicode file storage requirement; refer to the Multi-String UNI File Format Specification instead. |   |
 |   | - Clarify BUILDRULEORDER |   |
 |   | - Add support for INF statement in an FD region. |   |
-| *1.27* | *Updates:* | *Target Date* |
-|   | *- Specification revision to 1.27* |  |
-|   | *- Allow Registry Format GUID values as well a C Format GUID values* |   |
-|   | *- Specify how to process Private content specified in DEC files to only be used by modules within a package* |   |
-|   | *- Add new sub-section to the Build Report to show PCDs that are used in conditional directive statements in the DSC and FDF files that are not used in code by modules.* |  | 
-|   | *- Add an SHA1 HASH of a module's .efi file if the ```-Y HASH``` flag is present on the command-line.* |   |
-|   | *- Add support for calling pre-build and post-build tools if the DSC file contains ```PREBUILD``` or ```POSTBUILD``` entries in the DSC's ```[Defines]``` section.* |   |
-|   | *- Allow PCD values to be overridden by a command-line option: ```--pcd TokenSpaceGuidCName.PcdCname=Value```. String values must be encapsulated by double quote marks.* |   |
-|   | *- Update processing rules to support merging multiple binary files (FDF ```FILE RAW```) into a single RAW file.* |   |
-| &#32;  | &#32;  | &#32;  |
-| *1.28* | *Updates:* | *Target Date**
+|> *1.27* |> *Updates:* |> *Target Date* |
+|   |> *- Specification revision to 1.27* |  |
+|   |> *- Allow Registry Format GUID values as well a C Format GUID values* |   |
+|   |> *- Specify how to process Private content specified in DEC files to only be used by modules within a package* |   |
+|   |> *- Add new sub-section to the Build Report to show PCDs that are used in conditional directive statements in the DSC and FDF files that are not used in code by modules.* |  | 
+|   |> *- Add an SHA1 HASH of a module's .efi file if the ```-Y HASH``` flag is present on the command-line.* |   |
+|   |> *- Add support for calling pre-build and post-build tools if the DSC file contains ```PREBUILD``` or ```POSTBUILD``` entries in the DSC's ```[Defines]``` section.* |   |
+|   |> *- Allow PCD values to be overridden by a command-line option: ```--pcd TokenSpaceGuidCName.PcdCname=Value```. String values must be encapsulated by double quote marks.* |   |
+|   |> *- Update processing rules to support merging multiple binary files (FDF ```FILE RAW```) into a single RAW file.* |   |
+| &#32;  | &#32;  | &#32; |
+|> *1.28* |> *Updates:* |> *Target Date 2 ** |
+|   |> *- Specification revision to 1.28* |  |
 |   | *- Add new sub-section to the Build Report to show MACROS that are used in conditional directive statemens in the DSC and FDF files.* |   |
 |   |   |   |
+
+
 [Individual DCNs](SUMMARY.md)

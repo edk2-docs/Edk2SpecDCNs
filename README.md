@@ -14,4 +14,3 @@ Proposed changes to EDK II Meta-Data File Specifications
 
 * [Build Specification Changes](BuildSpec/README.md)
 
-

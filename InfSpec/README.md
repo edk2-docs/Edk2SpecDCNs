@@ -18,12 +18,12 @@ as byte array and string values.
  number, with an Errata tag. Errata tags are alpha characters.*
 
 
-| Revision Number  | Description  | Date   |
+| **Revision Number**  | **Description** | **Date** |
 | :--: | :--- | ---: |
 | 1.25  | - Revised WORKSPACE wording for updated build system that can handle packages located outside of the WORKSPACE directory tree (refer to the TianoCore.org/EDKII website for additional instructions on setting up a development environment). | January 2016 |
-| *1.26* | *Updates:* | *Target Date* |
-|   | *- Specification revision to 1.26* | |
-|   | *- Allow Registry Format GUID values as well a C Format GUID values*  |   |
+| > *1.26* |> *Updates:* |> *Target Date* |
+|   |> *- Specification revision to 1.26* | |
+|   |> *- Allow Registry Format GUID values as well a C Format GUID values*  |   |
 |   |   |   |
 
 
