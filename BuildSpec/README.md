@@ -12,8 +12,8 @@
 
 ## Revision History
 
-1. Revision number must change when there is a change to the specification that includes new content.*
-2. Changes considered bug fixes to the specification may use the same revision number, with an Errata tag. Errata tags are alpha characters.*
+> 1. Revision number must change when there is a change to the specification that includes new content.
+> 2. Changes considered bug fixes to the specification may use the same revision number, with an Errata tag. Errata tags are alpha characters.
 
 
 | **Revision Number**  | **Description**  | **Date**   |
