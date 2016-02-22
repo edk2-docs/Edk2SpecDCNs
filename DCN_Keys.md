@@ -12,7 +12,7 @@ Removed content marked by ~~this~~
 
 or like this:
 ```ini
-~~ Delete content~~
+~~Delete content~~
 ```
 
 It may appear as strikethrough text or with just the two tilde characters before and after a section.
