@@ -24,8 +24,10 @@ The layout of the text report file:
 ```ini
 |---- Platform summary
 ```
+
 >```ini
     |----- Conditional directives section
+    |----- Unused PCDs section
 ```
 
 ```ini
@@ -67,7 +69,17 @@ Conditional Directives used by the build system
 ============================================================================
 ```
 
-> ### 13.4.1 PCDs
+> If the DSC or FDF file define values for PCDs that are not used by any module and are not used in conditional directive statements, the following sub-section may appear.
+
+> ```ini
+>==========================================================================<
+PCDs not used by modules or in conditional directives
+============================================================================
+```
+
+
+
+> ### 13.4.1 PCDs in Conditional Directives
 
 > If a PCD is used in a conditional directive statement, the PCD section will be displayed.
 
@@ -88,10 +100,41 @@ Conditional Directives used by the build system
 > ============================================================================
 > PCD statements
 > >--------------------------------------------------------------------------<
-> gTokenSpaceGuid
+> gMyTokenSpaceGuid
 > *P SmmEnable                   : FEATURE (BOOLEAN) = 0x0
 >                                          DEC DEFAULT = 0x1
 > *B LogEnable                   : FIXED   (UNIT32) = 0x1
+>                                          DEC DEFAULT = 0x0
+> <-------------------------------------------------------------------------->
+> >==========================================================================<
+
+```
+
+> ### 13.4.2 PCDs not used
+
+> If a PCD is not used in a conditional directive statement or by a module, the not used PCD section will be displayed.
+
+> The first line is required:
+
+>```[*P|*F|*B] <PcdCName>: <PcdType> (<DatumType>) = <PcdValue>```
+>   * ```*P``` means the Pcd's value was obtained from the DSC file
+>   * ```*F``` means the PCD's value was obtained from the FDF file.
+>   * ```*B``` means the PCD's value set by a build option.
+
+> Additional lines may be displayed showing default values when the value is not a default value.
+
+> **Example**
+
+```ini
+> >==========================================================================<
+> PCDs not used by modules or in conditional directives
+> ============================================================================
+> PCD statements
+> >--------------------------------------------------------------------------<
+> gMyTokenSpaceGuid
+> *P SmmEnable                   : FEATURE (BOOLEAN) = 0x0
+>                                          DEC DEFAULT = 0x1
+> *B UsbEnable                   : FIXED   (UNIT32) = 0x1
 >                                          DEC DEFAULT = 0x0
 > <-------------------------------------------------------------------------->
 > >==========================================================================<
