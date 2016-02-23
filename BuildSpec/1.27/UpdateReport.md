@@ -49,28 +49,6 @@ On the command line, append the following arguments:
 
 >The default set of flags (if **-Y** is not specified) is: ```PCD, LIBRARY, FLASH, DEPEX, HASH, BUILD_FLAGS ```and ```FIXED_ADDRESS```.
 
-### 13.3.1 Layout
-The layout of the text report file:
-```ini
-|---- Platform summary
-```
->```ini
-    |----- Conditional directives section
-```
-
-```ini
-    |----- Global PCD section
-    |----- FD section*
-        |---- FD Region sub-section*
-        |---- VPD PCD Data sub-section*
-    |---- Module section*
-        |---- Basic Information summary
-        |---- PCD sub-section
-        |---- Library sub-section
-        |---- DEPEX sub-section
-        |---- Build_flags sub-section
-        |---- Notification sub-section
-```
 
 
 ### 13.3.2 Section and Sub-section Format
