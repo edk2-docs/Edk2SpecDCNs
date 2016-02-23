@@ -109,7 +109,7 @@ The first line is required:
 
 * ```*P``` means the Pcd's value was obtained from the DSC file
 * ```*F``` means the PCD's value was obtained from the FDF file.
-* ```*B``` means the PCD's value was build option.
+* ```*B``` means the PCD's value was obtained from a build option.
 * ~~If no ```*P``` or ```*F``` is given, the PCD's value comes from DEC file. If the value obtained from either the DSC or FDF is the same as the value in the DEC, then neither ```*P``` nor ```*F``` will be shown in the report.~~
 * >If no ```*P```, ```*F``` or ```*B``` is shown, the PCD's value comes from DEC file. If the value obtained from either a build option, the DSC or FDF is the same as the value in the DEC, then ```*B```, ```*P``` or ```*F``` will not be shown in the report.
 
