@@ -23,7 +23,7 @@
    * [Process Private content](BuildSpec/1.27/PrivateSettings.md)
    * [Registry GUID support](BuildSpec/1.27/RegFormatGUID.md)
    * [Report Update - Module SHA1 Hash](BuildSpec/1.27/UpdateReport.md)
-   * Report Update - PCDs
+   * [Report Update - PCDs](BuildSpec/1.27/UpdateReportPcds.md)
 * [Change Format Key](DCN_Keys.md)
    * [DCN Template](DcnTemplate.md)
 
