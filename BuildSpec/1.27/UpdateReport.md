@@ -13,8 +13,6 @@ DCN Date: 5 Feb 2016
 ### Summary
 
 Update the Report to include:
-* Listing of PCDs that are used in conditional directives in the DSC and FDF files that are not used in module code.
-* Update PCD keys to show command-line option override of values
 * Display a SHA1 HASH of the .efi file in the Module's Summary Section if the ```-Y HASH``` option is present
 
 
