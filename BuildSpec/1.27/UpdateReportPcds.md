@@ -83,7 +83,7 @@ PCDs not used by modules or in conditional directives
 
 > If a PCD is used in a conditional directive statement, the PCD section will be displayed.
 
-> PCD values derived from expressions or other PCDs are not differentiated in the report. Only the final value is displayed
+> PCD values derived from expressions or other PCDs are not differentiated in the report. Only the final value is displayed.
 
 > The first line is required:
 
@@ -116,7 +116,7 @@ PCDs not used by modules or in conditional directives
 
 > If a PCD is not used in a conditional directive statement or by a module, the not used PCD section will be displayed.
 
-> PCD values derived from expressions or other PCDs are not differentiated in the report. Only the final value is displayed
+> PCD values derived from expressions or other PCDs are not differentiated in the report. Only the final value is displayed.
 
 > The first line is required:
 
@@ -146,6 +146,8 @@ PCDs not used by modules or in conditional directives
 ```
 
 
+
+
 ## 13.5 Global PCD Section
 
 This section contains the information for all PCDs whose values are the same for all
@@ -162,7 +164,7 @@ gEfiMdeModulePkgTokenSpaceGuid
 …
 ```
 
-> PCD values derived from expressions or other PCDs are not differentiated in the report. Only the final value is displayed
+> PCD values derived from expressions or other PCDs are not differentiated in the report. Only the final value is displayed.
 
 Each global PCD item contains one or more lines:
 
